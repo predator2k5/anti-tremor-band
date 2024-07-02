@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteadyStride - Connect</title>
+    <link rel="stylesheet" href="1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="1.js" defer></script>
+</head>
+<body>
+    <div class="background-animation"></div>
+    <header>
+        <nav>
+            <a href="1.html" class="neon-button">Home</a>
+            <a href="abt.html" class="neon-button">About Us</a>
+            <a href="cnt.html" class="neon-button active">Connect</a>
+            <a href="prf.html" class="neon-button">Profile</a>
+            <a href="#" class="neon-button" id="logout-btn">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section class="connect-container">
+            <h2 class="glowing-text">Connect Your Device</h2>
+            <div class="device-status">
+                <p>Device Status: <span id="connection-status">Not Connected</span></p>
+            </div>
+            <button id="scan-button" class="neon-button">Scan for Devices</button>
+            <ul id="device-list" class="device-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SteadyStride. All rights reserved.</p>
+    </footer>
+</body>
+</html>

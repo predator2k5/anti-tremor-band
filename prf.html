@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteadyStride - Profile</title>
+    <link rel="stylesheet" href="1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="1.js" defer></script>
+</head>
+<body>
+    <div class="background-animation"></div>
+    <header>
+        <nav>
+            <a href="1.html" class="neon-button">Home</a>
+            <a href="abt.html" class="neon-button">About Us</a>
+            <a href="connect.css" class="neon-button">Connect</a>
+            <a href="prf.html" class="neon-button active">Profile</a>
+            <a href="#" class="neon-button" id="logout-btn">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section class="profile-container">
+            <h2 class="glowing-text">Patient Profile</h2>
+            <form id="patient-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tremor-type">Tremor Type</label>
+                    <select id="tremor-type" name="tremor-type" required>
+                        <option value="">Select Tremor Type</option>
+                        <option value="essential">Essential Tremor</option>
+                        <option value="parkinsonian">Parkinsonian Tremor</option>
+                        <option value="cerebellar">Cerebellar Tremor</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="severity">Tremor Severity (1-10)</label>
+                    <input type="range" id="severity" name="severity" min="1" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" name="notes" rows="4"></textarea>
+                </div>
+                <button type="submit" class="neon-button">Save Profile</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SteadyStride. All rights reserved.</p>
+    </footer>
+</body>
+</html>
